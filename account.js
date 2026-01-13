@@ -300,8 +300,21 @@
 
   function syncOrderTypeUI() {
     const t = getOrderType();
-    orderBlockCourse.classList.toggle("d-none", t !== "course");
-    orderBlockTutor.classList.toggle("d-none", t !== "tutor");
+    const courseMode = t === "course";
+    const tutorMode = t === "tutor";
+    
+    orderBlockCourse.classList.toggle("d-none", !courseMode);
+    orderBlockTutor.classList.toggle("d-none", !tutorMode);
+
+    orderCourseDate.disabled = !courseMode;
+    orderCourseTime.disabled = !courseMode || !orderCourseDate.value;
+    orderPersonsCourse.disabled = !courseMode;
+
+    orderTutorDate.disabled = !tutorMode;
+    orderTutorTime.disabled = !tutorMode;
+    orderTutorDuration.disabled = !tutorMode;
+    orderPersonsTutor.disabled = !tutorMode;
+    
     recalcPrice();
   }
 
