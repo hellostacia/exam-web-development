@@ -45,5 +45,6 @@
 - **Git / GitHub Pages**
 
 ## Демонстрация работы сайта
-Видео: [demo.mp4](demo/demo.mp4)
+Видео: (https://drive.google.com/file/d/1RlKcIJWDlzDGJyMPP6XUD33rIMLmO6CK/view?usp=sharing)
+
 
