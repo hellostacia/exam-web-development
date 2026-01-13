@@ -44,3 +44,6 @@
 - **JavaScript (fetch/AJAX)**
 - **Git / GitHub Pages**
 
+## Демонстрация работы сайта
+Видео: [demo.mp4](demo/demo.mp4)
+
